@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employcity</title>
+    <link rel="stylesheet" href="./src/styles.scss" />
+  </head>
+  <body class="page">
+    <header class="header">
+      <div class="header__block">
+        <img src="./src/images/logo.svg" alt="Logo" class="header__logo" />
+        <nav class="header__links">
+          <a href="#" class="header__link">БИЗНЕС</a>
+          <a href="#" class="header__link">О НАС</a>
+          <a href="#" class="header__link">ЦЕНЫ</a>
+          <a href="#" class="header__link">ОФОРМИТЬ ЗАКАЗ</a>
+        </nav>
+        <div class="header__burger">
+          <div class="header__burger-line"></div>
+          <div class="header__burger-line"></div>
+          <div class="header__burger-line"></div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="lead">
+        <div class="lead__block">
+          <h1 class="lead__title">
+            <span class="lead__title--highlight">LOREM IPSUM</span> DOLOR SIT
+            AMETCONSECTETUR
+            <span class="lead__title--highlight">ADIPISCING</span>
+          </h1>
+          <div class="lead__text">
+            <p class="lead__subtitle">
+              At vero eos et accusamus et iusto odio dignissimos ducimus!
+            </p>
+            <ol class="lead__list">
+              <li class="lead__item">- Totam rem aperiam eaque ipsa</li>
+              <li class="lead__item">
+                - Sit voluptatem accusantium doloremque laudantium
+              </li>
+              <li class="lead__item">
+                - Sed ut perspiciatis, unde omnis iste natus error
+              </li>
+            </ol>
+          </div>
+          <div class="lead__buttons">
+            <button class="lead__button">ЗАКАЗАТЬ</button>
+            <button class="lead__button lead__button--secondary">
+              ПОДРОБНЕЕ
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="order">
+        <div class="order__block">
+          <div class="order__name">
+            <h2 class="order__title">
+              ОФОРМЛЕНИЕ <span class="order__title--highlight">ЗАКАЗА</span>
+            </h2>
+            <p class="order__subtitle">
+              Перед заполнением формы ознакомьтесь с нашей схемой работы!
+            </p>
+          </div>
+          <div class="order__chain">
+            <div class="order__item">
+              <div class="order__circle">
+                <img
+                  src="./src/images/search.svg"
+                  class="order__icon"
+                  alt="search"
+                />
+              </div>
+              <p class="order__text">Lorem ipsum dolor sit amet</p>
+              <div class="order__dots">
+                <span class="order__dot">•</span>
+                <span class="order__dot">•</span>
+                <span class="order__dot">•</span>
+                <span class="order__dot">•</span>
+                <span class="order__dot">•</span>
+              </div>
+            </div>
+            <div class="order__item">
+              <div class="order__circle">
+                <img
+                  src="./src/images/percent.svg"
+                  class="order__icon"
+                  alt="percent"
+                />
+              </div>
+              <p class="order__text">Сonsecteturadipiscing elit</p>
+              <div class="order__dots">
+                <span class="order__dot">•</span>
+                <span class="order__dot">•</span>
+                <span class="order__dot">•</span>
+                <span class="order__dot">•</span>
+                <span class="order__dot">•</span>
+              </div>
+            </div>
+            <div class="order__item">
+              <div class="order__circle">
+                <img
+                  src="./src/images/file.svg"
+                  class="order__icon"
+                  alt="file"
+                />
+              </div>
+              <p class="order__text">Sed do eiusmod tempor</p>
+              <div class="order__dots">
+                <span class="order__dot">•</span>
+                <span class="order__dot">•</span>
+                <span class="order__dot">•</span>
+                <span class="order__dot">•</span>
+                <span class="order__dot">•</span>
+              </div>
+            </div>
+            <div class="order__item">
+              <div class="order__circle">
+                <img
+                  src="./src/images/message.svg"
+                  class="order__icon"
+                  alt="message"
+                />
+              </div>
+              <p class="order__text">Esse cillum dolore eu fugiat</p>
+              <div class="order__dots">
+                <span class="order__dot">•</span>
+                <span class="order__dot">•</span>
+                <span class="order__dot">•</span>
+                <span class="order__dot">•</span>
+                <span class="order__dot">•</span>
+              </div>
+            </div>
+            <div class="order__item">
+              <div class="order__circle">
+                <img
+                  src="./src/images/money.svg"
+                  class="order__icon"
+                  alt="money"
+                />
+              </div>
+              <p class="order__text">
+                Excepteur sint occaecat cupidatat non proident
+              </p>
+            </div>
+          </div>
+          <form class="order__form">
+            <div class="order__input-container">
+              <select class="order__select">
+                <option value="" disabled selected>Выберите тип системы</option>
+                <option value="option1">Sed ut perspiciatis</option>
+                <option value="option2">Nemo enim ipsam</option>
+                <option value="option3">Et harum quidem</option>
+                <option value="option3">Et harum quidem</option>
+                <option value="option3">Et harum quidem</option>
+                <option value="option3">Et harum quidem</option>
+              </select>
+              <input type="email" placeholder="Ваш e-mail" />
+              <input type="text" placeholder="Ваше имя" />
+            </div>
+            <div class="order__input-container">
+              <div class="order__range-container">
+                <div class="order__range-header">
+                  <label for="range" id="range-label" class="order__range-label"
+                    >Sed ut perspiciatis, unde omnis iste natus</label
+                  >
+                  <div id="range-value" class="order__range-value">50%</div>
+                </div>
+                <input
+                  type="range"
+                  id="range"
+                  class="order__range-input"
+                  min="0"
+                  max="100"
+                  value="50"
+                />
+              </div>
+              <label for="file-upload" class="order__file-upload">
+                <img
+                  class="order__file-icon"
+                  src="./src/images/doc.svg"
+                  alt="Upload Icon"
+                />
+                ПРИКРЕПИТЬ ФАЙЛ
+              </label>
+              <input type="file" id="file-upload" />
+            </div>
+            <button type='submit'>ОТПРАВИТЬ</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <p class="footer__text">© 2018 «LoremIpsum.net» Все права защищены.</p>
+        <div class="footer__payment">
+          <div class="footer__payment-item">
+            <img class="footer__payment-icon" src='./src/images/qiwi.svg' alt='qiwi'/>
+            <label class="footer__payment-label">Qiwi wallet</label>
+          </div>
+          <div class="footer__payment-item">
+            <img class="footer__payment-icon" src='./src/images/yaMoney.svg' alt='yandex'/>
+            <label class="footer__payment-label">Yandex Money</label>
+          </div>
+          <div class="footer__payment-item">
+            <img class="footer__payment-icon" src='./src/images/webMoney.svg' alt='webmoney'/>
+            <label class="footer__payment-label">Web Money</label>
+          </div>
+        </div>
+        <div class="footer__contacts">
+          <div class="footer__contacts-item">
+            <img class="footer__contacts-icon" src='./src/images/post.svg' alt='post'/>
+            <label class="footer__contacts-label">info@ipsum228.com</label>
+          </div>
+          <div class="footer__contacts-item">
+            <img class="footer__contacts-icon" src='./src/images/vk.svg' alt='vk'/>
+            <label class="footer__contacts-label">Мы вконтакте</label>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./src/index.js"></script>
+  </body>
+</html>

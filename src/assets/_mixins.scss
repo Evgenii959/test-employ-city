@@ -1,0 +1,75 @@
+// font-size
+@mixin font-size($size) {
+  font-size: $size;
+
+  @media (max-width: 1200px) {
+    font-size: $size * 0.9;
+  }
+  @media (max-width: 992px) {
+    font-size: $size * 0.8;
+  }
+  @media (max-width: 768px) {
+    font-size: $size * 0.5;
+  }
+}
+
+// line-height
+@mixin line-height($size) {
+  line-height: $size;
+
+  @media (max-width: 1200px) {
+    line-height: $size * 0.9;
+  }
+  @media (max-width: 992px) {
+    line-height: $size * 0.8;
+  }
+  @media (max-width: 768px) {
+    line-height: $size * 0.6;
+  }
+}
+
+@mixin responsive-flex-direction($direction) {
+  display: flex;
+  flex-direction: $direction;
+
+  @media (max-width: 1280px) {
+    flex-direction: column;
+  }
+}
+
+//size-inputs
+@mixin responsive-input-width {
+  width: 350px !important;
+
+  @media (max-width: 1280px) {
+    width: 90% !important;
+    margin: 0 auto;
+  }
+}
+
+@mixin responsive-button-upload-width {
+  width: 48% !important;
+
+  @media (max-width: 1280px) {
+    width: 90% !important;
+    margin: 0 auto;
+  }
+}
+
+@mixin responsive-button-submit-width {
+  width: 370px !important;
+
+  @media (max-width: 1280px) {
+    width: 90% !important;
+    margin: 0 auto;
+  }
+}
+
+@mixin responsive-order-text-width {
+  width: 189px !important;
+
+  @media (max-width: 1280px) {
+    width: 100px !important;
+    margin: 0;
+  }
+}
