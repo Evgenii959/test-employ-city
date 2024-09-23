@@ -1,8 +1,21 @@
-import { resolve } from 'path';
 import { defineConfig } from 'vite';
+import { resolve } from 'path';
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [],
-  envPrefix: 'APP_',
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `@import "@/assets/stylesheets/styles.scss";`,
+      },
+    },
+  },
+  resolve: {
+    alias: {
+      '@': resolve(__dirname, './src'),
+    },
+  },
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+  },
 });

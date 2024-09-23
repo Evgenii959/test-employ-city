@@ -1,3 +1,5 @@
+import '../assets/stylesheets/styles.scss';
+
 const rangeInput = document.getElementById('range');
 const rangeValue = document.getElementById('range-value');
 
