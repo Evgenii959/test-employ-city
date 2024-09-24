@@ -81,6 +81,10 @@
     font-size: 13px;
     line-height: 16px;
     transition: all 0.3s ease;
+    &:hover {
+      color: #42a9ed; // Изменение цвета при наведении
+      transform: translateY(-5px); // Смещение текста вверх
+    }
   }
 }
 
@@ -131,6 +135,22 @@
 
   &__text {
     margin: 80px 0;
+    overflow: hidden;
+
+    li {
+      opacity: 0;
+      transform: translateX(-100%);
+      animation: slide-and-fade 1s ease-in-out forwards;
+      animation-delay: 0.1s;
+      animation-delay: 0.6s;
+    }
+
+    @keyframes slide-and-fade {
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
   }
 
   &__buttons {
@@ -437,6 +457,7 @@ button[type='submit'] {
   font-size: 15px;
   border-radius: 4px;
   border: 1px solid #fff;
+  cursor: pointer;
 }
 
 input[type='email'],
@@ -538,8 +559,8 @@ input[type='range'] {
     z-index: 10;
     border: 1px solid #ccc;
     border-top: 0;
-    max-height: 200px; /* Ограничиваем высоту для появления скролла */
-    overflow-y: auto; /* Включаем вертикальный скролл */
+    max-height: 200px;
+    overflow-y: auto;
 
     &.active {
       display: block;
