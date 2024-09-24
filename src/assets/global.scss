@@ -1,11 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 @import 'mixins.scss';
 
-$color: red;
-body {
-  background-color: $color;
-}
-
 .page {
   background-color: #10101de5;
   margin: 0;
