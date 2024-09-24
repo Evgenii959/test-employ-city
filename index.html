@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel='stylesheet' href='./src/assets/global.scss'/>
+    <link rel="stylesheet" href="./src/assets/global.scss" />
     <title>Employcity</title>
   </head>
   <body class="page">
@@ -149,15 +149,43 @@
           </div>
           <form class="order__form">
             <div class="order__input-container">
-              <select class="order__select">
-                <option value="" disabled selected>Выберите тип системы</option>
-                <option value="option1">Sed ut perspiciatis</option>
-                <option value="option2">Nemo enim ipsam</option>
-                <option value="option3">Et harum quidem</option>
-                <option value="option3">Et harum quidem</option>
-                <option value="option3">Et harum quidem</option>
-                <option value="option3">Et harum quidem</option>
-              </select>
+              <div class="custom-select">
+                <div class="custom-select__header">
+                  <span class="custom-select__selected"
+                    >Выберите тип системы</span
+                  >
+                  <div class="custom-select__arrow"></div>
+                </div>
+                <div class="custom-select__options">
+                  <div class="custom-select__option" data-value="option1">
+                    Sed ut perspiciatis
+                  </div>
+                  <div class="custom-select__option" data-value="option2">
+                    Nemo enim ipsam
+                  </div>
+                  <div class="custom-select__option" data-value="option3">
+                    Et harum quidem
+                  </div>
+                  <div class="custom-select__option" data-value="option3">
+                    Et harum quidem
+                  </div>
+                  <div class="custom-select__option" data-value="option3">
+                    Et harum quidem
+                  </div>
+                  <div class="custom-select__option" data-value="option3">
+                    Et harum quidem
+                  </div>
+                  <div class="custom-select__option" data-value="option3">
+                    Et harum quidem
+                  </div>
+                  <div class="custom-select__option" data-value="option3">
+                    Et harum quidem
+                  </div>
+                  <div class="custom-select__option" data-value="option3">
+                    Et harum quidem
+                  </div>
+                </div>
+              </div>
               <input type="email" placeholder="Ваш e-mail" />
               <input type="text" placeholder="Ваше имя" />
             </div>
