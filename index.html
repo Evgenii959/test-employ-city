@@ -17,6 +17,7 @@
           <a href="#" class="header__link">ЦЕНЫ</a>
           <a href="#" class="header__link">ОФОРМИТЬ ЗАКАЗ</a>
         </nav>
+        <p class="header__signin">Регистрация</p>
         <div class="header__burger">
           <div class="header__burger-line"></div>
           <div class="header__burger-line"></div>
@@ -271,6 +272,47 @@
         </div>
       </div>
     </footer>
+    <div id="popup" class="popup">
+      <div class="popup__container">
+        <button class="popup__button-close"></button>
+        <h3 class="popup__title">Регистрация</h3>
+        <form class="popup__content">
+          <input
+            id="name"
+            class="popup__name"
+            placeholder="Введите имя"
+            type="text"
+            minlength="2"
+            maxlength="200"
+            required
+          />
+          <span class="popup__name-error"></span>
+          <input
+            id="email"
+            class="popup__name"
+            placeholder="Введите email"
+            type="email"
+            minlength="2"
+            maxlength="200"
+            autocomplete="current-email"
+            required
+          />
+          <span class="popup__name-error"></span>
+          <input
+            id="password"
+            class="popup__name"
+            placeholder="Введите пароль"
+            type="password"
+            minlength="2"
+            maxlength="200"
+            autocomplete="current-password"
+            required
+          />
+          <span class="popup__name-error"></span>
+          <button id="submit" type="submit">Зарегистрироваться</button>
+        </form>
+      </div>
+    </div>
     <script src="./src/index.js"></script>
   </body>
 </html>
