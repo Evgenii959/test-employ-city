@@ -463,6 +463,7 @@ button[type='submit'] {
 }
 
 input[type='email'],
+input[type='password'],
 input[type='text'] {
   @include responsive-input-width;
   padding: 10px;
